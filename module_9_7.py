@@ -4,7 +4,7 @@ import math
 def is_prime(func):
     def wrapper(*args, **kwargs):
         summa = func(*args, **kwargs)
-        n = int(math.sqrt(summa))
+        n = int(math.sqrt(summa)) + 1
         is_prime = True
 
         for i in range(2, n):
